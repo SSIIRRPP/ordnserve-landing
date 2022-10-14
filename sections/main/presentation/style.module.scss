@@ -1,0 +1,94 @@
+@import "../../../styles/variables.scss";
+
+$originalScale: 1;
+$finalScale: 1.04;
+$initialScale: 1.1;
+
+.container {
+  animation-name: initial-zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.background-image {
+  transform: scale($finalScale);
+  background-position: center center;
+  background-size: cover;
+  animation-name: image-zoom;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.body-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  margin-left: auto;
+  padding: 0 0 1rem;
+  min-width: 350px;
+  max-width: 800px;
+  width: 70%;
+  border-radius: $main-radius;
+}
+
+.body-title {
+  padding: 0.5rem 1rem 0;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  & > * {
+    font-size: 1.7rem !important;
+  }
+}
+
+.body-main {
+  & > h3 {
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  & > p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 2rem 0 0;
+  }
+  & > * {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  padding: 1rem;
+}
+
+@keyframes initial-zoom {
+  0% {
+    transform: scale($finalScale);
+  }
+  100% {
+    transform: scale($originalScale);
+  }
+}
+
+@keyframes image-zoom {
+  0% {
+    transform: scale($initialScale);
+  }
+  50% {
+    transform: scale($finalScale);
+  }
+  100% {
+    transform: scale($initialScale);
+  }
+}

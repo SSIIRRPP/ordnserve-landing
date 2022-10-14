@@ -1,0 +1,42 @@
+$main-grey: #585858;
+$medium-grey: #d3d2d2fd;
+$light-grey: #e7e7e7;
+$main-orange: #ff4d20;
+$main-orange-hover: #ca3d1a;
+$main-yellow: #f3b200;
+$main-background-color: #dfdbdb;
+$text-black-background: rgba(0, 0, 0, 0.61);
+$main-font-family: "Roboto";
+$main-radius: 0.4rem;
+$dark-background-primary: /* rgb(100, 100, 100) */ rgb(76, 76, 76);
+$dark-background-secondary: rgb(66, 66, 66);
+$dark-box-shadow-primary: 1px 1px 2px #f3b200;
+$dark-color-primary: #f3b200;
+$dark-color-secondary: #585858;
+$dark-button-color-primary: #f3b200;
+$dark-border-color-primary: #585858;
+/* $dark-border-color-primary: #f3b20054; */
+$dark-border-color-secondary: #585858;
+$light-background-primary: white;
+$light-background-secondary: rgb(192, 192, 192);
+$light-box-shadow-primary: 1px 1px 2px #d3d2d2fd;
+$light-color-primary: black;
+$light-color-secondary: white;
+$light-button-color-primary: rgb(0, 123, 255);
+$light-border-color-primary: #d3d2d2fd;
+$light-border-color-secondary: #585858;
+$box-shadow-secondary: 0px 0px 2px 1px rgba(0, 0, 0, 0.49) !important;
+$main-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.13);
+$main-box-shadow-lite: 0px 0px 2px 1px rgba(0, 0, 0, 0.23);
+
+@mixin box-shadow {
+  border: none !important;
+  /* 
+  box-shadow: $main-box-shadow; */
+  box-shadow: $box-shadow-secondary;
+}
+
+@mixin box-shadow-lite {
+  border: none !important;
+  box-shadow: $main-box-shadow-lite;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "ordnserve-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "exp": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
+    "lodash.throttle": "^4.1.1",
+    "next": "^12.2.0",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-parallax-mouse": "^1.7.3",
+    "react-resize-detector": "^7.1.2",
+    "react-scroll-parallax": "^3.2.0",
+    "react-sidebar": "^3.0.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.1",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "sass": "^1.54.0"
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 60px;
+}
+
+.link {
+  padding: 1rem;
+  border-bottom: 1px solid $main-grey;
+}

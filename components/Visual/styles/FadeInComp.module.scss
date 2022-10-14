@@ -1,0 +1,9 @@
+.FadeInComp {
+  transition: opacity 0.8s;
+  &.show {
+    opacity: 1;
+  }
+  &.hide {
+    opacity: 0;
+  }
+}

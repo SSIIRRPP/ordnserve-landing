@@ -1,0 +1,83 @@
+@import "../../../styles/variables.scss";
+
+.ContactForm {
+  @include box-shadow;
+  min-height: 75%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 750px !important;
+  min-width: 350px !important;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: $main-radius;
+  &__title {
+    text-align: center;
+  }
+  &__form {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    &--textarea {
+      height: 150px;
+      max-height: 240px;
+      width: 100% !important;
+    }
+  }
+  &__item {
+    & .form-label {
+      padding-left: 0.5rem;
+    }
+    & select,
+    input,
+    textarea {
+      @include box-shadow-lite;
+    }
+    padding: 0.25rem 0;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0 0;
+    &--button {
+      @include box-shadow-lite;
+      position: relative;
+      min-width: 150px;
+    }
+    &--loader {
+      position: absolute;
+      right: 10px;
+      top: 30%;
+    }
+    &--feedback {
+      &.error {
+        color: #dc3545;
+      }
+      &.success {
+        color: #198754;
+      }
+      margin: 0.2rem auto;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ContactForm {
+    max-width: 600px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ContactForm {
+    &__footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+export const SET_TOUCH = "SET_TOUCH";
+export const SET_FONT_SIZE_TRANSFORM = "SET_FONT_SIZE_TRANSFORM";

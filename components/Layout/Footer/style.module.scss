@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.Footer {
+  padding: 1.5rem 0;
+  background-color: $main-grey;
+  color: $main-background-color;
+  &__text {
+    color: $main-background-color;
+  }
+  &__link {
+    color: $main-background-color;
+    cursor: pointer;
+    &:hover {
+      color: gray;
+    }
+  }
+}
